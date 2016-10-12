@@ -245,7 +245,7 @@ Instead of adding the property separately to every exception call, you can set t
     {
         public void Initialize (ITelemetry telemetry)
         {
-            telemetry.Properties["AppVersion"] = "v2.1";
+            telemetry.Context.Properties["AppVersion"] = "v2.1";
         }
     }
 
